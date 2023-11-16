@@ -15,8 +15,8 @@ unsigned int number_of_command(char *s);
 char **_point_str(char *s);
 
 free_memory(char *ptr);
-buffer_free(char *buffer, char **c); 
-_send(char *buffer, char **c) ;
+buffer_free(char *buffer, char **c);
+_send(char *buffer, char **c);
 
 char *_strncpy(char *destination, char *s, int l);
 char *_strncpyconst(char *destination, const char *s, int l);

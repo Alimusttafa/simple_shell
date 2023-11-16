@@ -39,14 +39,10 @@ int main(int argc, char **argv, char **enviroment)
 	int status, c;
 	(void)argc;
 	buffer = NULL, l = 0, c = 0;
-	
 	dollar_sign();
-	
 	while ((chr = getline(&buffer, &l, stdin)))
 	{
-		
 		signal(SIGINT, INThandler);
-		
 		if (chr == EOF)
 			file_cont(buffer);
 		c++;
@@ -61,7 +57,7 @@ int main(int argc, char **argv, char **enviroment)
 			wait(&status);
 			_send(buffer, comm);
 		}
-		l = 0, buffer = NULL; 
+		l = 0, buffer = NULL;
 		dollar_sign();
 	}
 	if (chr == -1)

@@ -14,7 +14,7 @@ void free_memory(char **ptr)
 
 	while (ptr[x])
 	{
-		free(ptr[x]); 
+		free(ptr[x]);
 		x++;
 	}
 
