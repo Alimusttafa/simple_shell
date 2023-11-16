@@ -50,7 +50,7 @@ char **store_var(char *f_comm, char **envi)
 		(dire_len + comm_len + 2));
 		if (dire[x] == NULL)
 		{
-			free_memory(dire);//
+			free_memory(dire);
 			return (NULL);
 		}
 			_strncpcomm(dire[x], d, f_comm,
@@ -81,7 +81,7 @@ unsigned int find_num(char *pa)
 		if ((f && pa[x + 1] == ':') || (f && pa[x + 1] == '\0'))
 		{
 			number_dir++;
-			f= 0;
+			f = 0;
 		}
 		x++;
 		}
@@ -113,7 +113,8 @@ char *g_env(const char *n, char **envi)
 	while (envi[x])
 	{
 		if (_strcmp(envi_val, cp_n))
-			{																														envi_val = strtok(NULL,"\n");
+		{
+			envi_val = strtok(NULL, "\n");
 			free(cp_n);
 			return (envi_val);
 		}

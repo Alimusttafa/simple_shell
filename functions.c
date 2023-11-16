@@ -12,7 +12,7 @@ char **_point_str(char *s)
 	unsigned int l;
 	int x = 0;
 
-	s[_strlen(s) - 1] = '\0'; 
+	s[_strlen(s) - 1] = '\0';
 	l = number_of_command(s);
 	if (l == 0)
 		return (NULL);
