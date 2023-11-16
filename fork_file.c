@@ -40,7 +40,7 @@ void error_message(char **a, char *f_com, int c)
 }
 
 /**
- * fork_fail - function that handles a fork fail
+ * fork_fa - function that handles a fork fail
  * Return: Nothing
 */
 
